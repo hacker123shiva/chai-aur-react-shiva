@@ -1,0 +1,119 @@
+npx create-react-app  01basic
+
+package.json -> entry point 
+
+start- development me chalne ke liye
+build- deployment 
+test- on test
+eject -
+
+How to run application:
+npm start -> but use "npm run start" 
+
+npm run build ->use to build folder  ->during production only build folder is serve
+
+Since npx create-react-app is bulky so we go for vite or parcel
+
+npm create vite@latest
+
+node modules is only missing
+
+install dependencies -- npm install
+
+start using vite npm run dev'
+
+
+-----------------------
+index.html is SPA (single page application)
+
+in index.js 
+-- name might be different
+-- React create own doms using ReactDOM
+-- createRoot() 
+-- root.render()
+-- render <App/> gives power of JSX
+-- we can create custom tag
+-- if i remove   <React.StrictMode> does not affect in index.js
+
+What is App?
+It is just function 
+We can return html and we can render it.
+
+How javascript come in index.html
+-- in package.json 
+we have react-script --> load index.js
+
+=============
+In vite
+
+main.jsx
+-- createRoot() 
+
+creating 
+--chai.jsx must be in vite
+-- name of function must be in uppercase(tag Name)
+-- what is problem in
+return(<Chai/> <h1>Chai aur React</h1>)
+-- only one element is returned
+-- Solution 
+return(<><Chai/> <h1>Chai aur React</h1></>)
+
+===========
+Using React
+
+-- whenever we create component function which we import function name must be in start with capital.
+--  file may be put first letter be capital 
+
+Create Our Own React:
+======================
+
+
+
+react , vite  uses a bundler...
+
+How react work behind the Scene main.jsx 
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './App.jsx';
+
+function MyApp() {
+  return (
+    <div>
+      <h1>Custom App!</h1>
+    </div>
+  );
+}
+
+const reactElement = {
+  type: 'a',
+  props: {
+    href: 'https://google.com',
+    target: '_blank',
+  },
+  children: 'Click me to visit google',
+};
+
+const anotherElement = (
+  <a href="https://google.com" target="_blank">
+    Visit google
+  </a>
+);
+
+const reactElement1 = React.createElement(
+  'a',
+  {
+    href: 'https://google.com',
+    target: '_blank',
+  },
+  'click me to visit google'
+);
+ReactDOM.createRoot(document.getElementById('root')).render(
+  /* <MyApp /> */
+  // MyApp()  //-- we can do also like that
+  // anotherElement //-- we can do like that
+  // reactElement1 // we can do like that
+  <App />
+);
+
+
+{username} --> evaluated expression :final output
