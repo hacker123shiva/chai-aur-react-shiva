@@ -1,0 +1,28 @@
+Using 
+npx create-react-app  01basic
+
+package.json -> entry point 
+
+start- development me chalne ke liye
+build- deployment 
+test- on test
+eject -
+
+How to run application:
+npm start -> but use "npm run start" 
+
+npm run build ->use to build folder  ->during production only build folder is serve
+
+Since npx create-react-app is bulky so we go for vite or parcel
+
+-------------------------------
+Create React Project using Vite:
+npm create vite@latest
+
+node modules is only missing
+
+install dependencies -- npm install
+
+start using vite npm run dev
+
+

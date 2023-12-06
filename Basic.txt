@@ -168,3 +168,55 @@ function App() {
   };
 
   Assignement value does not less than 0
+
+==================
+Need of Virtual DOM and Fibre 
+is it used in virtual dom in recent Project
+
+
+What is use of createRoot() in react-dom
+-- create dom behind the scene
+
+blog---
+https://github.com/acdlite/react-fiber-architecture
+
+
+//useCallback(fn,dependencyArray) 
+
+//useEffect(setup,dependencies)
+=>Synchroninzing 
+
+
+//copy something to clipboard
+useRef hook
+//For React 
+window.navigator.clipboard.writeText(passwordRef.current.value);
+
+//nextjs
+server sie rendering
+
+
+At that time we have learnt useState, useCallback, useEffect, useRef
+
+4-Dec-2023 
+Currency Converter
+
+
+useId hook:
+
+generating unique ids that can be passed to accssibility attributes.
+
+React Router
+Inside react-router-dom 
+Link, NavLink
+Link: Used in place of a tag if we use Link tag no reloading of page.
+<Link to='/' />
+NavLink: 
+ <NavLink
+                  className={({isActive}) =>
+                    `block py-2 pr-4 pl-3 duration-200  ${isActive? "text-orange-700" :"text-gray-700"}border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                  }
+                >
+ 
+  <RouterProvider router={}></RouterProvider>  we can use when we are using react-router-dom
+  In such case <App/>> is not required we can ignore.
