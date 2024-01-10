@@ -1,13 +1,14 @@
-import Chai from './chai';
+import Chai, { Coffee, MyButton } from './Chai';
+import Render from './Render';
 
 function App() {
   const username = 'chai aur code';
 
   return (
     <>
-      <Chai />
-      <h1>chai aur react {username}</h1>
-      <p>test para</p>
+      {/* <Render />
+       */}
+      <h1>Chari</h1>
     </>
   );
 }

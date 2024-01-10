@@ -7,8 +7,8 @@ export default function Footer() {
           <div className="mb-6 md:mb-0">
             <Link to="/" className="flex items-center">
               <img
-                src="https://alexharkness.com/wp-content/uploads/2020/06/logo-2.png"
-                className="mr-3 h-16"
+                src="https://cdn.dribbble.com/users/2468490/screenshots/5579451/pet_logo.jpg"
+                className="mr-3 h-52" // Adjust the height value as needed
                 alt="Logo"
               />
             </Link>
@@ -38,7 +38,7 @@ export default function Footer() {
               <ul className="text-gray-500 font-medium">
                 <li className="mb-4">
                   <a
-                    href="https://github.com/hiteshchoudhary"
+                    href="#"
                     className="hover:underline"
                     target="_blank"
                     rel="noreferrer"
@@ -76,7 +76,7 @@ export default function Footer() {
         <div className="sm:flex sm:items-center sm:justify-between">
           <span className="text-sm text-gray-500 sm:text-center">
             © 2023
-            <a href="https://hiteshchoudhary.com/" className="hover:underline">
+            <a href="#" className="hover:underline">
               hiteshchoudhary
             </a>
             . All Rights Reserved.

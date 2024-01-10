@@ -180,43 +180,21 @@ What is use of createRoot() in react-dom
 blog---
 https://github.com/acdlite/react-fiber-architecture
 
+Tailwind and Props in reactjs:
+=========================
+props make component reusable
 
-//useCallback(fn,dependencyArray) 
+React Interviews question on counter
+===============================
+let [counter,setCounter] =userState(15)
+What happen if we get setCounter()
+counter =15;
 
-//useEffect(setup,dependencies)
-=>Synchroninzing 
-
-
-//copy something to clipboard
-useRef hook
-//For React 
-window.navigator.clipboard.writeText(passwordRef.current.value);
-
-//nextjs
-server sie rendering
-
-
-At that time we have learnt useState, useCallback, useEffect, useRef
-
-4-Dec-2023 
-Currency Converter
+setCounter(counter+1)
+setCounter(counter+1)
+setCounter(counter+1)
+setCounter(counter+1)
 
 
-useId hook:
-
-generating unique ids that can be passed to accssibility attributes.
-
-React Router
-Inside react-router-dom 
-Link, NavLink
-Link: Used in place of a tag if we use Link tag no reloading of page.
-<Link to='/' />
-NavLink: 
- <NavLink
-                  className={({isActive}) =>
-                    `block py-2 pr-4 pl-3 duration-200  ${isActive? "text-orange-700" :"text-gray-700"}border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
-                  }
-                >
- 
-  <RouterProvider router={}></RouterProvider>  we can use when we are using react-router-dom
-  In such case <App/>> is not required we can ignore.
+=>useState() send 
+setCounter((prevCounter)=>{})
